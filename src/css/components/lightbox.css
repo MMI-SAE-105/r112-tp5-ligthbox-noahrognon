@@ -21,27 +21,29 @@
 }
 
 ::backdrop {
-    background-color: 0, 0, 0;
-    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.8);
+    animation-duration: 2s;
+    animation-name: backdrop;
 }
 
-@keyframes lightbox {
+@keyframes backdrop {
     from {
-        transform: scale(0.3);
         opacity: 0;
     }
 
     to {
-        transform: scale(1);
         opacity: 1;
     }
+}
+@keyframes lightbox {
+    from {
+        transform: scale(0.3);
+        
+    }
+
 
 }
 @keyframes sortie {
-    from {
-        transform: scale(1);
-        opacity: 1;
-    }
 
     to {
         transform: scale(0);
