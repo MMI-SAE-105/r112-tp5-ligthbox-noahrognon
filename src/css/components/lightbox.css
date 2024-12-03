@@ -27,11 +27,30 @@
 
 @keyframes lightbox {
     from {
-        transform: scale(0.5);
+        transform: scale(0.3);
+        opacity: 0;
     }
 
     to {
         transform: scale(1);
+        opacity: 1;
     }
 
+}
+@keyframes sortie {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+}
+#lightbox.sortie {
+    animation-name: sortie;
+    animation-duration: 1s;
+    
 }
